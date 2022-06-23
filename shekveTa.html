@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ტური ქალაქში(შეკვეთა)</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/tour.css">
+<style>
+
+</style>
+</head>
+<body>
+
+
+<header style="background-image: url('images/funiculor.png');">
+  <h2>ტური ქალაქში(შეკვეთა)</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+		<li><a href="aboutus.html">ჩვენს შესახებ</a></li>
+      <li><a href="index.html">თბილისი</a></li>
+      <li><a href="baTumi.html">ბათუმი</a></li>
+      <li><a href="quTaisi.html">ქუთაისი</a></li>
+    </ul>
+	<!--<form name="F_menu" id="F_menu" action="shekveTa.html" method="get">
+	  <select name="saturoqalaqi">
+	    <option>გთხოვთ მიუთითოთ სატურო ქალაქი</option>
+		<option>თბილისი</option>
+		<option>ბათუნი</option>
+		<option>ქუთაისი</option>
+		<option>სიღნაღი</option>
+	  </select><br><br>
+	  <input type="text" name="" placeholder="სახელი და გვარი"><br><br>
+	  <input type="text" name="" placeholder="პირადობის პირადი ნომერი(11 ციფრი)"><br><br>
+	  <input type="text" name="" placeholder="ასაკი"><br><br>
+	  <input type="reset">&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit">-->
+	</form>
+  </nav>
+  
+  <article>
+  <p id="result"></p>
+  <p id="result_split"></p>
+  <p id="result_split_L"></p>
+  <table border=1>
+    <tr><td>ქალაქი: </td><td id="qalaqi"></td></tr>
+	<tr><td>სახელი და გვარი: </td><td id="sGvari"></td></tr>
+	<tr><td>პირადობა: </td><td id="pir"></td></tr>
+	<tr><td>ასაკი: </td><td id="Asaki"></td></tr>
+  </table>
+  <script>
+  
+	let SekveTa = location.search;
+	//console.log(SekveTa);
+	//document.getElementById("result").innerHTML = SekveTa;
+	let Result_split = SekveTa.split("&");
+	//document.getElementById("result_split").innerHTML = Result_split;
+	//console.log(Result_split.length);
+	//document.getElementById("result_split_L").innerHTML = Result_split.length;
+	
+	var sia =[];
+	for(var i in Result_split){
+	  //document.write("<br>" + Result_split[i]);
+	  sia[i] = Result_split[i].split("=");
+	}
+    
+	for(var j in sia){
+	  document.write("<br>" + sia[j][1]);
+	}
+    document.getElementById("qalaqi").innerHTML = sia[0][1];
+	document.getElementById("sGvari").innerHTML = sia[1][1].replace("+"," ");
+	document.getElementById("pir").innerHTML    = sia[2][1];
+	document.getElementById("Asaki").innerHTML  = sia[3][1];
+  </script>
+  
+    <h1>თბილისი</h1>
+    <p>
+	თბილისის ძველი სახელწოდება იყო ტფილისი. ადრინდელ ქართულ წერილობით ძეგლებში სწორედ ასეთი ფორმითაა ის დამოწმებული. მაგ. ევსტათი მცხეთელის, აბო ტფილელის წამებასასა და „მოქცევაჲ ქართლისაჲს“ ტექსტებში. საქართველოს დედაქალაქის ძველი ფორმიდან, ტფილისიდან წარმოსდგება მისი სახელი მეზობელთა ენებზე. მეზობელ ქვეყნებში ძველად ტფილისი სხვადასხვაგვარად გამოითქმოდა. თავდაპირველად სომხურად ტფილისი „ტფღის“-ად (სომხ. Տփղիս) ჟღერდა, ბერძნულად (ბიზანტიური ხანიდან) გვხვდება „ტიფლის/ტიფლიზა“ (ბერძ. Τιφλίδα), ხოლო ლათინურად როგორც „ტიფლისი“, „ტიფლიტანა“ ასევე „ტრიფელისი“ (ლათ. Tiphlis/Tephlis/Tiphilis; Tiphlitana; Triphelis)[5][6]. ასევე ჟღერს თბილისის სახელი არამეულ (არამ. ܛܦܠܝܣ; תיפליס), სპარსულ (სპარს. تفلیس) და თურქულ ენებზე (თურქ. Tiflis). რუსული «Тифлис» არამეულ-სპარსულ-თურქულ ფორმას იმეორებს, მასვე მოსდევს ევროპის ენებში დამკვიდრებული „Tiflis“.
+
+საგულისხმოა ასევე თბილისი კავკასიურ ენებზე. ის ასე გამოითქმის: მეგრულად — „ქართი“, აფხაზურად — «Қарҭ» [ქართ].
+
+რუსული ფორმა «Тифлис» დამკვიდრებული იყო 1936 წლის 17 აგვისტომდე, როდესაც სსრ კავშირის ცენტრალურმა აღმასრულებელმა კომიტეტმა დაადგინა, რომ თანახმად სსრ კავშირის შინაგან საქმეთა სახალხო კომისარიატის სახელმწიფო აგეგმვის და კარტოგრაფიის მთავარი სამმართველოს ბიუროს წარდეგნისა დამტკიცებულ იქნა ქალაქის სახელის ახალი ფორმა[7].
+
+რუსული ფორმა «Тбилиси», რომელიც წარმოადგენს ქართული ახალი სახელწოდების სახელობით ფორმას, თანდათან დამკვიდრდა და განმტკიცდა რუსულ ლიტერატურაში.
+
+რაც შეეხება ქართული სახელწოდების ძველ ფორმას მას რამდენიმე ხანი კვლავაც იყენებდნენ. 1937 წლიდან საბოლოოდ დამკვიდრდა ქალაქის დღევანდელი სახელწოდება — თბილისი.
+........
+
+	</p>
+<img src="images/xedi-1.png">
+<img src="images/xedi-2.png">     
+<img src="images/xedi-3.png">  	
+<img src="images/xedi-4.png">	
+<img src="images/xedi-5.png">		
+  </article>
+</section>
+
+<footer>
+  <p>ყველა უფლება დაცულია &copy; 2022</p>
+</footer>
+
+</body>
+</html>
+
